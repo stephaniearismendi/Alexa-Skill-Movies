@@ -1,0 +1,198 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "recomendaciones de cine",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "RegistrarDatosIntent",
+          "slots": [
+            {
+              "name": "genreslot",
+              "type": "AMAZON.Genre",
+              "samples": [
+                "{genreslot}",
+                "Es {genreslot}"
+              ]
+            },
+            {
+              "name": "actorslot",
+              "type": "AMAZON.Actor",
+              "samples": [
+                "{actorslot}",
+                "es {actorslot}"
+              ]
+            },
+            {
+              "name": "directorslot",
+              "type": "AMAZON.Actor",
+              "samples": [
+                "{directorslot}",
+                "Es {directorslot}"
+              ]
+            }
+          ],
+          "samples": [
+            "registrar favorito",
+            "registrar directora",
+            "registrar actriz",
+            "registrar genero",
+            "registrar director",
+            "registar actor",
+            "registrar datos",
+            "registar"
+          ]
+        },
+        {
+          "name": "RecomendacionIntent",
+          "slots": [
+            {
+              "name": "NombreActor",
+              "type": "AMAZON.Actor"
+            },
+            {
+              "name": "NombreDirector",
+              "type": "AMAZON.Actor"
+            }
+          ],
+          "samples": [
+            "dime una pelicula donde salga {NombreActor}",
+            "dime una pelicula dirigida por {NombreDirector} donde salga {NombreActor}",
+            "dime una película dirigida por {NombreDirector}",
+            "dime una película de {NombreActor}",
+            "Recomiendame una película de {NombreActor} dirigida por {NombreDirector}",
+            "Recomiendame una película dirigida por {NombreDirector}",
+            "Recomiendame una  película donde actúe {NombreActor}",
+            "Recomiendame una película de {NombreActor}"
+          ]
+        },
+        {
+          "name": "RecomendarActorFavorito",
+          "slots": [],
+          "samples": [
+            "dime una película donde salga mi actor favorito",
+            "dime una pelicula de mi actor favorito",
+            "recomienda una pelicula de mi actor favorito",
+            "Recomiendame una película de mi actor favorito"
+          ]
+        },
+        {
+          "name": "RecomendacionAleatoriaGenero",
+          "slots": [
+            {
+              "name": "GeneroElegido",
+              "type": "AMAZON.Genre"
+            }
+          ],
+          "samples": [
+            "dime una película del género {GeneroElegido}",
+            "recomiendame una película del género {GeneroElegido}"
+          ]
+        },
+        {
+          "name": "RecomendarDirectorFavorito",
+          "slots": [],
+          "samples": [
+            "recomiendame una pelicula de mi director favorito",
+            "dime una pelicula de mi director favorito"
+          ]
+        },
+        {
+          "name": "RecomendarGeneroFavorito",
+          "slots": [],
+          "samples": [
+            "dime una película de mi género preferido",
+            "recomiendame una película de mi género preferido",
+            "recomiendame una pelicula de mi genero favorito",
+            "dime una película de mi genero favorito"
+          ]
+        }
+      ],
+      "types": []
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "RegistrarDatosIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "genreslot",
+              "type": "AMAZON.Genre",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.717806100970.899116810451"
+              }
+            },
+            {
+              "name": "actorslot",
+              "type": "AMAZON.Actor",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.717806100970.543195661054"
+              }
+            },
+            {
+              "name": "directorslot",
+              "type": "AMAZON.Actor",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.717806100970.1345036048629"
+              }
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.717806100970.1345036048629",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "¿Quién es tu director o directora favorito?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.717806100970.543195661054",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "¿Quién es tu actor o actriz favorito?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.717806100970.899116810451",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "¿Cuál es tu género favorito?"
+          }
+        ]
+      }
+    ]
+  },
+  "version": "16"
+}

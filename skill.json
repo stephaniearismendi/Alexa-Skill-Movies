@@ -1,0 +1,99 @@
+{
+  "manifest": {
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:119534005318:function:e567a67b-9dfa-4997-a919-b56ab41c9d56:Release_0"
+        },
+        "interfaces": [],
+        "regions": {
+          "NA": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-east-1:119534005318:function:e567a67b-9dfa-4997-a919-b56ab41c9d56:Release_0"
+            }
+          },
+          "EU": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:eu-west-1:119534005318:function:e567a67b-9dfa-4997-a919-b56ab41c9d56:Release_0"
+            }
+          },
+          "FE": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-west-2:119534005318:function:e567a67b-9dfa-4997-a919-b56ab41c9d56:Release_0"
+            }
+          }
+        }
+      }
+    },
+    "manifestVersion": "1.0",
+    "permissions": [
+      {
+        "name": "alexa::profile:given_name:read"
+      }
+    ],
+    "privacyAndCompliance": {
+      "locales": {
+        "es-ES": {},
+        "es-US": {},
+        "es-MX": {}
+      }
+    },
+    "publishingInformation": {
+      "automaticClonedLocale": {
+        "locales": [
+          {
+            "source": "es-ES"
+          }
+        ]
+      },
+      "category": "MOVIE_INFO_AND_REVIEWS",
+      "distributionCountries": [],
+      "isAvailableWorldwide": true,
+      "locales": {
+        "it-IT": {
+          "name": "Recomendador de películas"
+        },
+        "de-DE": {
+          "name": "Recomendador de películas"
+        },
+        "en-US": {
+          "name": "Recomendador de películas"
+        },
+        "es-ES": {
+          "description": "Puedes pedir que te recomiende películas en base a tu director, actor o genero favorito. También permite almacenar estos para el futuro.",
+          "examplePhrases": [
+            "Alexa abre recomendaciones de cine",
+            "agregar favoritos",
+            "ayuda"
+          ],
+          "keywords": [],
+          "name": "Recomendador de películas",
+          "summary": "Skill que recomienda películas en base a tus gustos"
+        },
+        "es-US": {
+          "description": "Puedes pedir que te recomiende películas en base a tu director, actor o genero favorito. También permite almacenar estos para el futuro.",
+          "examplePhrases": [
+            "Alexa abre recomendaciones de cine",
+            "agregar favoritos",
+            "ayuda"
+          ],
+          "keywords": [],
+          "name": "Recomendador de películas",
+          "summary": "Skill que recomienda películas en base a tus gustos"
+        },
+        "es-MX": {
+          "description": "Puedes pedir que te recomiende películas en base a tu director, actor o genero favorito. También permite almacenar estos para el futuro.",
+          "examplePhrases": [
+            "Alexa abre recomendaciones de cine",
+            "agregar favoritos",
+            "ayuda"
+          ],
+          "keywords": [],
+          "name": "Recomendador de películas",
+          "summary": "Skill que recomienda películas en base a tus gustos"
+        }
+      },
+      "testingInstructions": "Sample Testing Instructions."
+    }
+  }
+}
